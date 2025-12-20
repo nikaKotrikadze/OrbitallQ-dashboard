@@ -1,0 +1,25 @@
+.header {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.role-label {
+  color: #6b7280;
+  padding-right: 5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
