@@ -21,7 +21,7 @@ export type Station = {
 export const STATIONS: Station[] = [
   {
     id: "cos",
-    name: "Colorado Springs (COS)",
+    name: "Colorado Springs",
     location: { lat: 38.8339, lon: -104.8214 },
     weather: {
       temperatureC: 18,
@@ -70,5 +70,81 @@ export const STATIONS: Station[] = [
     },
     recommendedAction: "Proceed with scheduled satellite passes",
     lastUpdated: "2025-12-19T21:41:00Z",
+  },
+];
+
+export type TableStation = {
+  id: string;
+  name: string;
+  location: string;
+  weather: {
+    condition: string;
+    temperatureC: number;
+    windSpeedKmh: number;
+  };
+  opsRisk: string;
+  lastUpdatedMinutesAgo: number;
+};
+
+export const TABLESTATIONS: TableStation[] = [
+  {
+    id: "colorado-springs",
+    name: "Colorado Springs",
+    location: "Colorado, USA",
+    weather: {
+      condition: "Clear",
+      temperatureC: 18,
+      windSpeedKmh: 22,
+    },
+    opsRisk: "MEDIUM",
+    lastUpdatedMinutesAgo: 10,
+  },
+  {
+    id: "vandenberg-sfb",
+    name: "Vandenberg SFB",
+    location: "California, USA",
+    weather: {
+      condition: "Overcast",
+      temperatureC: 15,
+      windSpeedKmh: 35,
+    },
+    opsRisk: "HIGH",
+    lastUpdatedMinutesAgo: 5,
+  },
+  {
+    id: "ascension-island",
+    name: "Ascension Island",
+    location: "South Atlantic",
+    weather: {
+      condition: "Partly cloudy",
+      temperatureC: 28,
+      windSpeedKmh: 12,
+    },
+    opsRisk: "LOW",
+    lastUpdatedMinutesAgo: 8,
+  },
+  {
+    id: "kauai",
+    name: "Kauai",
+    location: "Hawaii, USA",
+    weather: {
+      condition: "Clear",
+      temperatureC: 26,
+      windSpeedKmh: 18,
+    },
+    opsRisk: "LOW",
+    lastUpdatedMinutesAgo: 12,
+  },
+  {
+    id: "cape-verde",
+    name: "Cape Verde",
+    location: "West Africa",
+    weather: {
+      condition: "Clear",
+      temperatureC: 24,
+      windSpeedKmh: 15,
+    },
+    opsRisk: "LOW",
+    lastUpdatedMinutesAgo: 15,
   },
 ];

@@ -6,6 +6,7 @@ import Missions from "./components/pages/Missions/Missions";
 import Satellites from "./components/pages/Satellites/Satellites";
 import DataSharing from "./components/pages/DataSharing/DataSharing";
 import Admin from "./components/pages/Admin/Admin";
+import StationDetails from "./components/pages/Stations/StationDetails/StationDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/satellites" element={<Satellites />} />
           <Route path="/stations" element={<Stations />} />
+          <Route path="/stations/:stationId" element={<StationDetails />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/datasharing" element={<DataSharing />} />
           <Route path="/admin" element={<Admin />} />

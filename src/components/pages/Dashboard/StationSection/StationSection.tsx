@@ -16,11 +16,11 @@ const StationSection = () => {
   const selectedOption = options.find((opt) => opt.value === selectedStationId);
 
   return (
-    <div>
+    <div className="flex flex-col gap-5">
       <h1 className="col-[#1F2933] text-xl font-semibold">
         Ground Station Ops Risk
       </h1>
-      <div>
+      <div className="flex flex-col gap-2">
         <span className="col-[#1F2933] text-s font-semibold">
           Selected Station
         </span>
