@@ -26,7 +26,7 @@ const WeatherCard = ({
 
         <h1 className="max-w-24 text-[#6B7280]">{title}</h1>
       </div>
-      <h1 className="text-l pt-2 text-[#1F2933]">
+      <h1 className="text-l pt-2 text-[#1F2933] font-semibold">
         {number}
         {factor}
       </h1>
@@ -42,7 +42,7 @@ const WeatherCondition = ({
   bgCol: string;
 }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-5">
+    <>
       <WeatherCard
         title={"Temperature"}
         icon={<LuThermometer color="#6B7280" />}
@@ -71,7 +71,7 @@ const WeatherCondition = ({
         factor="%"
         bgCol={bgCol}
       />
-    </div>
+    </>
   );
 };
 

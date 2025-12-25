@@ -14,7 +14,9 @@ const Dashboard = () => {
       <SatelliteCondition />
       <div className="bg-white p-10 rounded-3xl outilne-solid outline-[#E5E7EB] outline-1 flex flex-col gap-5">
         <StationSection />
-        <WeatherCondition station={station} bgCol="#F9FAFB" />
+        <div className="grid grid-cols-2 gap-5">
+          <WeatherCondition station={station} bgCol="#F9FAFB" />
+        </div>
         <RiskLevel station={station} />
         <hr style={{ color: "#E5E7EB" }} />
         <RecommendedAction station={station} />

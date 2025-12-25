@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RiskLevel = ({ station }: { station: any }) => {
   return (
@@ -34,7 +35,9 @@ const RiskLevel = ({ station }: { station: any }) => {
           {station?.risk.message}
         </h1>
       </div>
-      <button
+      <Link
+        to={`/stations/${station.id}`}
+        className="flex items-center justify-center"
         style={{
           color: "#1F2933",
           backgroundColor: "#fff",
@@ -46,7 +49,7 @@ const RiskLevel = ({ station }: { station: any }) => {
         }}
       >
         View station details
-      </button>
+      </Link>
     </div>
   );
 };
