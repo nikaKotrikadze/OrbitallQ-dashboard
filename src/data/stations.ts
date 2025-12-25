@@ -1,6 +1,6 @@
 export type RiskLevel = "LOW" | "MEDIUM" | "HIGH";
 
-type ForecastItem = {
+export type ForecastItem = {
   time: string;
   condition: string;
   temperature: string;
