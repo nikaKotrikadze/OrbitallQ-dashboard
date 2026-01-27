@@ -1,4 +1,3 @@
-import React from "react";
 import { LuThermometer, LuCloudRain } from "react-icons/lu";
 import { FaWind } from "react-icons/fa";
 import { IoMdCloudOutline } from "react-icons/io";

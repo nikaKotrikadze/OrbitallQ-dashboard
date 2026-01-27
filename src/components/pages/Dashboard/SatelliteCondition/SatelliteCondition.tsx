@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../../../Card/Card";
 import { LuSatellite } from "react-icons/lu";
 import { IoWarningOutline, IoCloudOfflineOutline } from "react-icons/io5";

@@ -2,8 +2,6 @@ import { useState } from "react";
 import "./Navbar.css";
 import { MdOutlineDashboard } from "react-icons/md";
 import { IoIosRadio } from "react-icons/io";
-import { IoSettingsOutline, IoServerOutline } from "react-icons/io5";
-import { LuSatellite } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 
 interface NavItem {
@@ -13,7 +11,7 @@ interface NavItem {
 }
 
 const Navbar = ({ children }: { children?: React.ReactNode }) => {
-  const [activeItem, setActiveItem] = useState("dashboard");
+  const [, setActiveItem] = useState("dashboard");
 
   const navItems: NavItem[] = [
     { path: "dashboard", label: "Dashboard", icon: <MdOutlineDashboard /> },

@@ -1,4 +1,3 @@
-import React from "react";
 import WeatherCondition from "../../Dashboard/WeatherCondition/WeatherCondition";
 
 const CurrentCondition = ({ station }: { station: any }) => {

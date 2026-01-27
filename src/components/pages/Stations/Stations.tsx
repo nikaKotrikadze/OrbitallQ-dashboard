@@ -1,4 +1,3 @@
-import React from "react";
 import StationsTable from "./StationTable";
 
 const Stations = () => {

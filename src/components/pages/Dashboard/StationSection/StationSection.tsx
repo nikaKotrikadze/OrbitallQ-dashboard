@@ -1,6 +1,4 @@
-import React from "react";
 import Select from "react-select";
-import { STATIONS } from "../../../../data/stations";
 import { useStationStore } from "../../../../store/useStationStore";
 
 const StationSection = () => {

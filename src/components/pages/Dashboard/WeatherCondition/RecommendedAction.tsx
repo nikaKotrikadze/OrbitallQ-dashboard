@@ -1,5 +1,3 @@
-import React from "react";
-
 const RecommendedAction = ({ station }: { station: any }) => {
   const now = new Date();
   const formattedDateTime = now.toLocaleString();

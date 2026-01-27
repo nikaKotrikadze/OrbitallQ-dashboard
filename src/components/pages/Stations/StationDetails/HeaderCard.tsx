@@ -1,4 +1,3 @@
-import React from "react";
 import RiskBadge from "./RiskBadge";
 
 const HeaderCard = ({ station }: { station: any }) => {

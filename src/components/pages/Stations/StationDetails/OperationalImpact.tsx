@@ -1,5 +1,3 @@
-import React from "react";
-
 const OperationalImpact = ({ station }: { station: any }) => {
   return (
     <div className="bg-white p-10 rounded-3xl outline-1 outline-[#E5E7EB] flex flex-col gap-5">
