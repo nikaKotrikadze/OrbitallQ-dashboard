@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import SatelliteCondition from "./SatelliteCondition/SatelliteCondition";
 import StationSection from "./StationSection/StationSection";
 import WeatherCondition from "./WeatherCondition/WeatherCondition";
