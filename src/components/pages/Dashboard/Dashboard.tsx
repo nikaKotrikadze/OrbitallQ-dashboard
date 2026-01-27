@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SatelliteCondition from "./SatelliteCondition/SatelliteCondition";
 import StationSection from "./StationSection/StationSection";
 import WeatherCondition from "./WeatherCondition/WeatherCondition";
 import { useStationStore } from "../../../store/useStationStore";
 import RiskLevel from "./WeatherCondition/RiskLevel";
 import RecommendedAction from "./WeatherCondition/RecommendedAction";
+import { getActiveSatellites } from "../../../services/satelliteService";
 
 const Dashboard = () => {
   const station = useStationStore((s) => s.selectedStation());
 
+  useEffect(() => {
+    getActiveSatellites();
+  }, []);
   return (
     <div className="flex flex-col px-6 pt-5 pb-5 gap-5">
       <SatelliteCondition />

@@ -17,11 +17,11 @@ const Navbar = ({ children }: { children?: React.ReactNode }) => {
 
   const navItems: NavItem[] = [
     { path: "dashboard", label: "Dashboard", icon: <MdOutlineDashboard /> },
-    { path: "satellites", label: "Satellites", icon: <LuSatellite /> },
+    // { path: "satellites", label: "Satellites", icon: <LuSatellite /> },
     { path: "stations", label: "Stations", icon: <IoIosRadio /> },
-    { path: "missions", label: "Missions", icon: <LuSatellite /> },
-    { path: "datasharing", label: "Data Sharing", icon: <IoServerOutline /> },
-    { path: "admin", label: "Admin", icon: <IoSettingsOutline /> },
+    // { path: "missions", label: "Missions", icon: <LuSatellite /> },
+    // { path: "datasharing", label: "Data Sharing", icon: <IoServerOutline /> },
+    // { path: "admin", label: "Admin", icon: <IoSettingsOutline /> },
   ];
 
   return (
